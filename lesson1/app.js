@@ -36,23 +36,35 @@ fs.writeFile(path.join('main','fifthFolder', 'text5.txt'),'Hello 5', (err) => {
     if (err) throw new Error(err.message)
 })
 
+
 fs.stat(path.join('main'), (err, stats)=>{
     if (err) throw new Error(err.message);
-    console.log(stats.isDirectory());
-    console.log(stats.isFile());
+    console.log(`Is this directory: ${stats.isDirectory()}`);
+    console.log(`Is this file: ${stats.isFile()}`);
 })
+
+
 fs.stat(path.join('main','firstFolder'), (err, stats)=>{
     if (err) throw new Error(err.message);
-    console.log(stats.isDirectory());
-    console.log(stats.isFile());
+    console.log(`Is this directory: ${stats.isDirectory()}`);
+    console.log(`Is this file: ${stats.isFile()}`);
 })
+
+
 fs.stat(path.join('main','fifthFolder'), (err, stats)=>{
     if (err) throw new Error(err.message);
-    console.log(stats.isDirectory());
-    console.log(stats.isFile());
+    console.log(`Is this directory: ${stats.isDirectory()}`);
+    console.log(`Is this file: ${stats.isFile()}`);
 })
+
 fs.stat(path.join('main','firstFolder','text1.txt'), (err, stats)=>{
     if (err) throw new Error(err.message);
-    console.log(stats.isDirectory());
-    console.log(stats.isFile());
+    console.log(`Is this directory: ${stats.isDirectory()}`);
+    console.log(`Is this file: ${stats.isFile()}`);
+})
+
+fs.stat(path.join('main','fifthFolder','text5.txt'), (err, stats)=>{
+    if (err) throw new Error(err.message);
+    console.log(`Is this directory: ${stats.isDirectory()}`);
+    console.log(`Is this file: ${stats.isFile()}`);
 })
