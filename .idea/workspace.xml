@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4a925fa8-893a-4428-9a64-90455f9b3064" name="Changes" comment="hw1">
+    <list default="true" id="4a925fa8-893a-4428-9a64-90455f9b3064" name="Changes" comment="hw1 change">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/users.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fs.service.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson1/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/lesson1/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson1/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson1/main/fifthFolder/text5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson1/main/firstFolder/text1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson1/main/fourthFolder/text4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson1/main/secondFolder/text2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson1/main/thirdFolder/text3.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,18 +22,26 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
         <option value="package.json" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2MN6swbFfAHQlPMBsmrKmBwCKgI" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -37,6 +54,7 @@
     "WebServerToolWindowFactoryState": "false",
     "javascript.nodejs.core.library.configured.version": "18.13.0",
     "javascript.nodejs.core.library.typings.version": "18.13.0",
+    "last_opened_file_path": "C:/Users/Admin/IdeaProjects/Node 2023 homeworks",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "settings.nodejs"
   }
@@ -54,7 +72,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1677595911067</updated>
-      <workItem from="1677595912484" duration="9502000" />
+      <workItem from="1677595912484" duration="15448000" />
+      <workItem from="1678117301093" duration="20036000" />
     </task>
     <task id="LOCAL-00001" summary="hw1">
       <created>1677605434904</created>
@@ -63,7 +82,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677605434904</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="hw1 change">
+      <created>1677622760412</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1677622760412</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -82,7 +108,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="hw1" />
-    <option name="LAST_COMMIT_MESSAGE" value="hw1" />
+    <MESSAGE value="hw1 change" />
+    <option name="LAST_COMMIT_MESSAGE" value="hw1 change" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
