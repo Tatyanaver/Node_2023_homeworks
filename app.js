@@ -1,130 +1,91 @@
-const express = require('express');
-const serv = require('./fs.service');
+const express = require("express");
 
 const app = express();
 
 app.use(express.json());
-app.use(express.urlencoded({ extended: true }))
+app.use(express.urlencoded({ extended: true }));
 
-// app.get('/welcome',(req, res)=>{
-//     res.send('Welcome!')
-// })
+const users = [
+  {
+    name: "Oleh",
+    age: 19,
+    gender: "male",
+  },
+  {
+    name: "Anton",
+    age: 22,
+    gender: "female",
+  },
+  {
+    name: "Anya",
+    age: 25,
+    gender: "female",
+  },
+  {
+    name: "Ielizavetta",
+    age: 35,
+    gender: "female",
+  },
+  {
+    name: "Cocos",
+    age: 70,
+    gender: "mixed",
+  },
+];
 
-
-app.get('/users', async (req, res)=>{
-    const users = await serv.reader()
-    res.json(users)
-})
-
-app.get('/users/:userId', async (req, res)=>{
-    const {userId} = req.params;
-
-    const users = await serv.reader()
-    const user = users.find((user) => user.id === +userId)
-    if (!user) {
-        res.status(422).json (`user with id ${userId} not found`)
-    }
-
-    res.json (user)
+app.get("/users", (req, res) => {
+  res.json(users);
 });
 
-app.post('/users', async (req, res)=>{
-    const {name,age, gender} = req.body
-    if(!name || name.length<2 ) {
-        res.status(400).json('not full name')
-    }
+app.get("/users/:userId", (req, res) => {
+  const { userId } = req.params;
+  const user = users[+userId];
 
-    if(!age || !Number.isInteger(age) || Number.isNaN(age)) {
-        res.status(400).json('wrong age')
-    }
-    if(!gender || (gender !== 'male' && gender !== 'female')) {
-        res.status(400).json('wrong gender')
-    }
+  res.json(user);
+});
 
-    const users = await serv.reader();
-    const newUser = {
-        id: users[users.length-1]?.id + 1 || 1,
-        name,
-        age,
-        gender};
+app.post("/users", (req, res) => {
+  const body = req.body;
+  users.push(body);
 
-    users.push(newUser);
+  res.status(201).json({
+    message: "User created!",
+  });
+});
 
-    await serv.writer(users)
-    res.status(201).json(newUser)
-})
+app.put("/users/:userId", (req, res) => {
+  const { userId } = req.params;
+  const updatedUser = req.body;
 
-app.patch('/users/:userId', async (req, res) => {
-    const {userId} = req.params
-    const {name,age,gender} = req.body;
+  users[+userId] = updatedUser;
 
-    if(name || name.length<2 ) {
-        res.status(400).json('not full name')
-    }
+  res.status(200).json({
+    message: "User updated",
+    data: users[+userId],
+  });
+});
 
-    if(age || !Number.isInteger(age) || Number.isNaN(age)) {
-        res.status(400).json('wrong age')
-    }
-    if(gender || (gender !== 'male' && gender !== 'female')) {
-        res.status(400).json('wrong gender')
-    }
+app.delete("/users/:userId", (req, res) => {
+  const { userId } = req.params;
 
-    const users = await serv.reader();
-    const index = users.findIndex((user) => user.id === +userId);
+  users.splice(+userId, 1);
 
+  res.status(200).json({
+    message: "User deleted",
+  });
+});
 
-    if (index=== -1) {
-        res.status(422).json (`user with id ${userId} not found`)
-    }
-    users[index] = {...users[index], ...req.body};
+app.get("/welcome", (req, res) => {
+  res.send("WELCOME");
+});
 
-    await serv.writer(users)
-    res.status(201).json(users[index])
-})
-
-
-app.delete('/users/:userId', async (req, res) => {
-    const {userId} = req.params;
-    const users = await serv.reader();
-
-   const index = users.findIndex((user) => user.id === +userId);
-    if (index=== -1) {
-        res.status(422).json (`user with id ${userId} not found`)
-    }
-
-    users.splice(index, 1);
-
-    await serv.writer(users)
-    res.sendStatus(204);
-})
-
-
-//
-//
-// app.put('/users/:userId', (req, res)=>{
-//     const { userId } = req.params;
-//     const updatedUser = req.body;
-//
-//     users[+userId] = updatedUser;
-//
-//     res.status(200).json({
-//         message: 'User updated',
-//         data: users[+userId]
-//     })
-// })
-//
-// app.delete('/users/:userId', (req, res)=>{
-//     const { userId } = req.params;
-//
-//     users.splice(+userId, 1);
-//
-//     res.status(200).json({
-//         message: 'User deleted',
-//     })
-// })
+// app.post()
+// app.put()
+// app.patch()
+// app.delete()
 
 const PORT = 5100;
 
-app.listen(PORT,() => {
-    console.log(`server has started on port ${PORT}`)
-})
+app.listen(PORT, () => {
+  console.log(`Server has started on PORT ${PORT}`);
+});
