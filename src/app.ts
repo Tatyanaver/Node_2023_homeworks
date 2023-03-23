@@ -1,7 +1,7 @@
 import express, { Request, Response } from "express";
 import mongoose from "mongoose";
 
-import { User } from "./models/User.model";
+import { User } from "./models/user.model";
 import { IUser } from "./types/user.types";
 
 const app = express();

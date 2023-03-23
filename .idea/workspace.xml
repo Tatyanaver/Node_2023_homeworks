@@ -1,23 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4a925fa8-893a-4428-9a64-90455f9b3064" name="Changes" comment="hw2">
-      <change afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/helper.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/user.model.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/user.types.ts" afterDir="false" />
+    <list default="true" id="4a925fa8-893a-4428-9a64-90455f9b3064" name="Changes" comment="lection3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/users.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fs.service.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson1/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson1/main/fifthFolder/text5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson1/main/firstFolder/text1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson1/main/fourthFolder/text4.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson1/main/secondFolder/text2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson1/main/thirdFolder/text3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +22,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="lesson_2" />
+        <entry key="$PROJECT_DIR$" value="lesson_3" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -90,7 +76,7 @@
       <workItem from="1678665487924" duration="427000" />
       <workItem from="1678699863946" duration="2570000" />
       <workItem from="1678942055475" duration="5406000" />
-      <workItem from="1679177364173" duration="20835000" />
+      <workItem from="1679177364173" duration="23675000" />
     </task>
     <task id="LOCAL-00001" summary="hw1">
       <created>1677605434904</created>
@@ -113,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678554540313</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="lection3">
+      <created>1679524677573</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1679524677573</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,7 +127,8 @@
     <MESSAGE value="hw1" />
     <MESSAGE value="hw1 change" />
     <MESSAGE value="hw2" />
-    <option name="LAST_COMMIT_MESSAGE" value="hw2" />
+    <MESSAGE value="lection3" />
+    <option name="LAST_COMMIT_MESSAGE" value="lection3" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
